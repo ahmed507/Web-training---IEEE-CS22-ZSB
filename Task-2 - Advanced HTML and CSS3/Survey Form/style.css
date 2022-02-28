@@ -1,0 +1,100 @@
+body {
+  background-color: red;
+  background-image: linear-gradient(
+      120deg,
+      rgba(128, 130, 255, 0.4),
+      rgb(252, 119, 119, 0.4)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#survey-form {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #2c2c4a;
+  border-radius: 1%;
+  padding: 10px;
+}
+#dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 0px;
+  margin-top: -10px;
+  color: #fff;
+}
+#dropdown-title {
+  margin-bottom: 0px;
+}
+#title {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#description {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+#name-label,
+#email-label,
+#number-label,
+#dropdown-title,
+#current-role-label,
+#check-box-label,
+#textarea-label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.form-block {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.radio-check {
+  margin-top: 5px;
+}
+#current-role {
+}
+.small {
+  font-size: 0.7em;
+  font-weight: 100;
+  font-style: italic;
+}
+#check-box-block{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  color: #fff;
+}
+#check-box-label{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.check-box-check{
+    margin-top: 5px;
+}
+#texarea-block{
+    min-height: 120px;
+  padding: 0.625rem;
+  resize: none;
+}
+#textarea-label{
+    margin-bottom: 5px;
+}
+#submit{
+    color: #fff;
+    background-color: #37AF65;
+    height: 50px;
+
+
+}

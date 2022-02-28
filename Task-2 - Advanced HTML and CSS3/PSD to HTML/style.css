@@ -1,0 +1,241 @@
+:root {
+  --main-color: #0000fd;
+  --sec-color: #325dff;
+  --features-color:#fafafa;
+  --main-font:Poppins, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --sec-font:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d9f0ff;
+  font-family: var(--main-font);
+}
+h1 {
+  font-family: var(--main-font);
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: 0;
+}
+h2 {
+    font-family: var(--main-font);
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: 0;
+}
+h3 {
+    font-family: var(--main-font);
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: 0;
+}
+h4 {
+    font-family: var(--main-font);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 550;
+  margin: 0;
+}
+article {
+  padding: 2.5rem;
+}
+p {
+  width: 80%;
+  font-family: var(--sec-font);
+  font-size: 1rem;
+}
+#main {
+  color: white;
+  height: 147vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.4),
+      rgba(68, 107, 193, 0.4)
+    ),
+    url("img/main_background.png");
+  background-size: cover;
+  background-position: 50%;
+  background-color: rgba(0, 0, 250, 0.69);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2rem 2.5rem;
+}
+#header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+#nav-bar {
+}
+#nav-bar ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+#main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: 550;
+  font-family: var(--main-font);
+  width: 15rem;
+  height: 4rem;
+  margin: 2.5rem;
+  border: var(--main-color);
+}
+.btn:hover{
+    background-color: var(--sec-color);
+}
+#main section {
+  display: grid;
+  place-items: center;
+}
+#main h1 {
+  padding-top: 20vh;
+}
+#work {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+}
+#work img {
+  size: content;
+}
+
+#features {
+  background-color: var(--features-color);
+}
+#features article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#features p {
+  width: 60%;
+}
+.grid {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem 2rem;
+  padding: 3rem;
+}
+.grid-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 0.1rem var(--features-color) solid;
+  padding: 2.5rem 0;
+}
+.icon {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  background-color: var(--sec-color);
+  color: white;
+  border-radius: 100%;
+  width: 6rem;
+  height: 6rem;
+}
+#out-case-studies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/image_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+#out-case-studies .icon {
+  background: none;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+}
+#out-case-studies .icon :hover{
+  transform: translateY(0.5rem);
+  transition: transform 0.4s ease-out;
+}
+#out-case-studies article {
+  padding: 0;
+  width: 60%;
+}
+#featured-projects article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+.project p,
+h2 {
+  text-align: left;
+}
+.project article {
+  text-align: left;
+}
+
+#first-project article,
+#second-project article,
+#third-project article {
+  display: block;
+}
+.project .btn {
+  margin-top: 0;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 100;
+}
+
